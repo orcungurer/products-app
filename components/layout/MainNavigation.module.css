@@ -1,0 +1,23 @@
+.header {
+  width: 100%;
+  height: 4rem;
+  padding: 0 10%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  /* position: fixed;
+  z-index: 1; */
+}
+
+.logo {
+  font-size: 2rem;
+  color: #237EC4;
+  font-weight: bold;
+}
+
+.header a:hover,
+.header a:active {
+  color: rgb(0 0 0 / 75%);
+}
