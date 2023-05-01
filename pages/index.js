@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Fragment } from "react";
 import ProductList from "@/components/products/ProductList";
+import HorizontalProductList from "@/components/products/HorizontalProductList";
 
 const HomePage = (props) => {
   return (
@@ -9,6 +10,7 @@ const HomePage = (props) => {
         <title>Products App</title>
         <meta name="description" content="Browse a list of products!" />
       </Head>
+      <HorizontalProductList products={props.horizontalProducts} />
       <ProductList products={props.products} nextPage={props.nextPage} />
     </Fragment>
   );
@@ -25,6 +27,7 @@ export const getStaticProps = async () => {
 
   return {
     props: {
+      horizontalProducts: responseData.result.horizontalProducts,
       products: responseData.result.products,
       nextPage: responseData.result.nextUrl,
     },
