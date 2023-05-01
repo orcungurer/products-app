@@ -1,0 +1,112 @@
+/* .product-detail {} */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.brand {
+  color: #237ec4;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.product {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.rating {
+  text-align: right;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.badge {
+  background-color: #feff86;
+  font-weight: 500;
+  font-size: 0.8rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.image {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.image img {
+  width: 30%;
+}
+
+.storage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.options {
+  display: flex;
+  gap: 1rem;
+}
+
+.options button {
+  font: inherit;
+  cursor: pointer;
+  border: 1px solid black;
+  background-color: transparent;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+}
+
+.options button:hover,
+.options button:focus,
+.options button:active {
+  background-color: black;
+  color: white;
+}
+
+.prices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.seller {
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.35rem;
+}
+
+.shipping {
+  background-color: #e1f1ed;
+  color: #3ca886;
+  font-weight: 500;
+  font-size: 0.8rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.status {
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 430px) {
+  .product {
+    font-size: 1rem;
+  }
+
+  .badge {
+    font-size: 0.75rem;
+  }
+}
